@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.27)
+project(Prob_interview_Intersection_of_Two_Linked_Lists_LCCI)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(Prob_interview_Intersection_of_Two_Linked_Lists_LCCI main.cpp)

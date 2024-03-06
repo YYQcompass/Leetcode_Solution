@@ -35,3 +35,6 @@
 # Clion
 .idea
 cmake-build-*/
+
+# VScode
+.vscode

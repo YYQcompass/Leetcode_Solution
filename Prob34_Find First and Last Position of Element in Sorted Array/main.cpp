@@ -26,12 +26,6 @@ public:
         {
             return {leftBorder, rightBorder};
         }
-//        // 情况一
-//        if (leftBorder == -2 || rightBorder == -2) return {-1, -1};
-//        // 情况三
-//        if (rightBorder - leftBorder > 1) return {leftBorder + 1, rightBorder - 1};
-//        // 情况二
-//        return {-1, -1};
 
     }
 private:
@@ -53,7 +47,7 @@ private:
             else
             { // nums[middle] == target
                 left = middle+1;
-                Right_Boarder = left;
+                Right_Boarder = middle;
             }
         }
         return Right_Boarder;
@@ -76,8 +70,8 @@ private:
             }
             else
             { // nums[middle] == target
-                right = middle-1;
-                Left_Boarder = right;
+                right = middle-1; // 这里必须减1，让区间不断变小 不然会出现死循环导致运行超时
+                Left_Boarder = middle;
             }
         }
         return Left_Boarder;

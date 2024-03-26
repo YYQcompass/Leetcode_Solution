@@ -14,6 +14,8 @@ struct TreeNode {
 class Solution {
 public:
     int minDepth(TreeNode* root) {
+
+    }
         if (!root) return 0; //如果root直接为空，那就直接返回空vector
         int depth = 0;
         queue<TreeNode *> q; //初始化一个空队列用于存放节点
@@ -35,8 +37,6 @@ public:
             }
         }
         return depth;
-    }
-
 };
 int main() {
     std::cout << "Hello, World!" << std::endl;

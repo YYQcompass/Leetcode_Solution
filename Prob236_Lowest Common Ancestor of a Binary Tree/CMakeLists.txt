@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.27)
+project(Prob236_Lowest_Common_Ancestor_of_a_Binary_Tree)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(Prob236_Lowest_Common_Ancestor_of_a_Binary_Tree main.cpp)

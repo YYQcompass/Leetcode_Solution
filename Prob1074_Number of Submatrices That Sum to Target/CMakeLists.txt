@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.27)
+project(Prob1074_Number_of_Submatrices_That_Sum_to_Target)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(Prob1074_Number_of_Submatrices_That_Sum_to_Target main.cpp)

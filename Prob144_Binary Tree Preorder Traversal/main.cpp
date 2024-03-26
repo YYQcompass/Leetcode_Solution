@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+#include <stack>
 using namespace std;
 /**
  * Definition for a binary tree node.
@@ -37,6 +37,27 @@ public:
         return res;
     }
 };
+
+class Solution2 {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> res;
+        stack<TreeNode*> st;
+        if (root)
+            st.push(root);
+        while (!st.empty()) {
+            TreeNode* cur = st.top();
+            st.pop();
+            res.push_back(cur->val);
+            if (cur->right)
+                st.push(cur->right);
+            if (cur->left)
+                st.push(cur->left);
+        }
+        return res;
+    }
+};
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
